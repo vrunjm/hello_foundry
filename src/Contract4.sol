@@ -18,7 +18,7 @@ contract ABIEncoder {
 contract ABIDecoder {
     function decodeUint(bytes memory data) public pure returns (uint) {
         //
-        return decodedValue;
+        return abi.decode(data, (uint));
     }
 
     function decodeMultiple(
